@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background-coffee: linear-gradient(to right, #132D31, #2B4237);
+  --navbar: #132D31;
+
+  --card-green: linear-gradient(90deg, #93E2AE, #46BF6F);
+  --card-green-title-header: #93e2ae;
+  --card-green-title-text: #003a05;
+  --card-yellow: #fbd53d;
+  --card-yellow-header-title: #ffcc00;
+}
+
+@theme inline {
+  --color-background-coffee: var(--background-coffee);
+  --color-navbar: var(--navbar);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-card-green: var(--card-green);
+  --color-card-green-title-header: var(--card-green-title-header);
+  --color-card-green-title-text: var(--card-green-title-text);
+  --color-card-yellow: var(--card-yellow);
+  --color-card-yellow-header-title: var(--card-yellow-header-title);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: linear-gradient(to right, #132D31, #2B4237);
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
