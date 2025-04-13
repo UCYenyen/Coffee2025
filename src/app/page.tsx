@@ -4,7 +4,7 @@ import Image from "next/image";
 import NavbarUI from "./navbar";
 import dotbg from "./../Images/dottedbackground.svg"
 import CoffeeLogo from "./../Images/coffeeLogo.svg"
-import Waves from "./../Images/waves.svg"
+import Waves from "./../Images/Waves.svg"
 import Timeline from "./../Images/timeline.svg"
 
 import ConferenceSpeaker1 from "./../Images/Pembicara/ConferenceSpeaker1.svg";
