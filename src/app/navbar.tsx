@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ArrowDown from "./../Images/arrowdown.svg"
+import ArrowDown from "./../Images/arrowDown.svg"
 import UClogo from "./../Images/uclogo.svg"
 import FTPlogo from "./../Images/ftplogo.svg"
 export default function navbar() {
