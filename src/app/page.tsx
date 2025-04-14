@@ -47,8 +47,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="3Bawahnya w-[100vw] h-auto flex flex-col justify-center items-center gap-[1.5vw] md:flex-row">
-            <div className="mt-10 relative flex justify-center h-[100%] w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw] sm:h-[72vh] md:h-[78vh] lg:h-[65vh] xl:h-[72vh]">
+          <div className="3Bawahnya w-[100vw] flex flex-col gap-[1.5vw] items-center justify-center sm:items-stretch md:flex-row">
+            <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw]">
                 <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
                   <div className="">
                     <h1 className="text-[24px] pl-[3vw] pr-[3vw] sm:text-[24px] text-black font-semibold p-2 ">BACKGROUND</h1>
@@ -62,15 +62,14 @@ export default function Home() {
                   <br />
                 </div>
             </div>
-
-            <div className="mt-10 relative flex justify-center h-[100%] w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw] sm:h-[72vh] md:h-[78vh] lg:h-[65vh] xl:h-[72vh]">
+            <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw]">
                 <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
                   <div className="">
                     <h1 className="text-[24px] pl-[3vw] pr-[3vw] sm:text-[24px] text-black font-semibold p-2">SCOPES</h1>
                   </div>
                 </div>
                 <div className="bg-[#93E2AE] rounded-2xl mt-20 mb-5 w-[95%]">
-                  <br />
+                <br />
                   <ul className=" text-left max-w-[85%] ml-10 text-black sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     <li className="list-disc">Functional Food</li>
                     <li className="list-disc">Food Nutrition</li>
@@ -85,14 +84,14 @@ export default function Home() {
                   <br />
                 </div>
               </div>
-              <div className="mt-10 relative flex justify-center h-[100%] w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw] sm:h-[72vh] md:h-[78vh] lg:h-[65vh] xl:h-[72vh]">
+              <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw]">
                 <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
                   <div className="">
                     <h1 className="text-[24px] pl-[3vw] pr-[3vw] sm:text-[24px] text-black font-semibold p-2">BENEFITS</h1>
                   </div>
                 </div>
                 <div className="bg-[#93E2AE] rounded-2xl mt-20 mb-5 w-[95%]">
-                  <br />
+                <br />
                   <p className="font-semibold text-left ml-10 max-w-[100%] text-black sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     For everyone
                   </p>
@@ -123,103 +122,94 @@ export default function Home() {
           </div>
 
           <h1 className="text-center text-5xl font-semibold mt-20 text-amber-50 md:text-6xl">CONFERENCE</h1>
-          <div id="Conference" className="Conference w-[100vw] h-auto flex flex-col justify-center items-center gap-[1.5vw] md:flex-row">
-            <div className="mt-10 relative flex justify-center h-[65vh] w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw] sm:h-[65vh] md:h-[70vh] lg:h-[75vh] xl:h-[80vh]">
+          <div id="Conference" className="Conference w-[100vw] flex flex-col items-center justify-center sm:items-stretch md:flex-row gap-[1.5vw]">
+            <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw]">
                   <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
                     <div className="">
                       <h1 className="text-[24px] pl-[3vw] pr-[3vw] sm:text-[24px] text-black font-semibold p-2">SPEAKER 1</h1>
                     </div>
                   </div>
                   <div className="flex flex-col items-center bg-[#93e2af00] rounded-2xl mt-20 mb-5 w-[95%]">
-                    <br />
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={ConferenceSpeaker1} alt="Speaker1" />
                     </div>
-                    <p className="mt-5 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Muliasari Kartikawati, S.TP., M.Sc., Ph.D.
                     </p>
-                    <p className="mt-5 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-center font-bold max-w-[100%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Universitas Ciputra Surabaya, Indonesia
                     </p>
-                    <br />
                   </div>
             </div>
-            <div className="mt-10 relative flex justify-center h-[65vh] w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw] sm:h-[65vh] md:h-[70vh] lg:h-[75vh] xl:h-[80vh]">
+            <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw]">
                   <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
                     <div className="">
                       <h1 className="text-[24px] pl-[3vw] pr-[3vw] sm:text-[24px] text-black font-semibold p-2">SPEAKER 2</h1>
                     </div>
                   </div>
                   <div className="flex flex-col items-center bg-[#93e2af00] rounded-2xl mt-20 mb-5 w-[95%]">
-                    <br />
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={ConferenceSpeaker2} alt="Speaker1" />
                     </div>
                     <p className="mt-5 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     MuliasaAssoc. Prof. Mito Kokawa, Ph.D.
                     </p>
-                    <p className="mt-5 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-center font-bold max-w-[100%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Tsukuba University, Japan
                     </p>
-                    <br />
                   </div>
             </div>
           </div>
 
           <h1 className="text-center text-5xl font-semibold mt-20 md:text-6xl">CEO TALK</h1>
-          <div id="Conference" className="Conference w-[100vw] h-auto flex flex-col justify-center items-center gap-[1.5vw] md:flex-row">
-            <div className="mt-10 relative flex justify-center h-[65vh] w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw] sm:h-[65vh] md:h-[70vh] lg:h-[75vh] xl:h-[80vh]">
+          <div id="CEOTalk" className="Conference w-[100vw] flex flex-col items-center justify-center sm:items-stretch md:flex-row gap-[1.5vw]">
+            <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw]">
                   <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
                     <div className="">
                       <h1 className="text-[24px] pl-[3vw] pr-[3vw] sm:text-[24px] text-black font-semibold p-2">SPEAKER 1</h1>
                     </div>
                   </div>
                   <div className="flex flex-col items-center bg-[#93e2af00] rounded-2xl mt-20 mb-5 w-[95%]">
-                    <br />
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={CEO1} alt="Speaker1" />
                     </div>
                     <p className="mt-5 text-center font-bold max-w-[80%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     A.A. Raka Bagus Vinaya
                     </p>
-                    <p className="mt-5 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     CEO & Owner of Ladang Lima
                     </p>
-                    <br />
                   </div>
             </div>
-            <div className="mt-10 relative flex justify-center h-[65vh] w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw] sm:h-[65vh] md:h-[70vh] lg:h-[75vh] xl:h-[80vh]">
+            <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw]">
                   <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
                     <div className="">
                       <h1 className="text-[24px] pl-[3vw] pr-[3vw] sm:text-[24px] text-black font-semibold p-2">SPEAKER 2</h1>
                     </div>
                   </div>
                   <div className="flex flex-col items-center bg-[#93e2af00] rounded-2xl mt-20 mb-5 w-[95%]">
-                    <br />
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={CEO2} alt="Speaker1" />
                     </div>
                     <p className="mt-5 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Jamie Najmi Misbah
                     </p>
-                    <p className="mt-5 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     CEO of Mazaraat Artisan Cheese
                     </p>
-                    <br />
                   </div>
             </div>
           </div>
 
           <h1 className="text-center text-5xl font-semibold mt-20 text-amber-50 md:text-6xl">COMPETITION</h1>
-          <div id="CEOTalk" className="CEOTalk w-[100vw] h-auto flex flex-col justify-center items-center gap-[1.5vw] md:flex-row">
-            <div className="mt-10 relative flex justify-center h-[100%] w-[90vw] bg-gradient-to-b from-[#5ce88d00] to-[#008761] rounded-2xl md:w-[29vw]">
+          <div id="Competition" className="Competition w-[100vw] flex flex-col items-center justify-center sm:items-stretch md:flex-row gap-[1.5vw]">
+            <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#5ce88d00] to-[#008761] rounded-2xl md:w-[29vw]">
                   <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
                     <div className="">
                       <h1 className="text-[24px] pl-[3vw] pr-[3vw] sm:text-[24px] text-black font-semibold p-2">SPEAKER 1</h1>
                     </div>
                   </div>
                   <div className="flex flex-col items-center bg-[#93e2af00] rounded-2xl mt-20 mb-5 w-[95%]">
-                    <br />
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={paper} alt="Speaker1" />
                     </div>
@@ -229,17 +219,15 @@ export default function Home() {
                     <a href="" className="mt-5 text-center font-bold max-w-[70%] text-card-yellow text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Read More
                     </a>
-                    <br />
                   </div>
             </div>
-            <div className="mt-10 relative flex justify-center h-[100%] w-[90vw] bg-gradient-to-b from-[#5ce88d00] to-[#008761] rounded-2xl md:w-[29vw]">
+            <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#5ce88d00] to-[#008761] rounded-2xl md:w-[29vw]">
                   <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
                     <div className="">
                       <h1 className="text-[24px] pl-[3vw] pr-[3vw] sm:text-[24px] text-black font-semibold p-2">SPEAKER 2</h1>
                     </div>
                   </div>
                   <div className="flex flex-col items-center bg-[#93e2af00] rounded-2xl mt-20 mb-5 w-[95%]">
-                    <br />
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={poster} alt="Speaker1" />
                     </div>
@@ -249,7 +237,6 @@ export default function Home() {
                     <a href="" className="mt-5 text-center font-bold max-w-[70%] text-card-yellow text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Read More
                     </a>
-                    <br />
                   </div>
             </div>
           </div>

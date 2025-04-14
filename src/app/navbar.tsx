@@ -16,17 +16,21 @@ export default function navbar() {
           <div className="bg-slate-50 w-10 h-2"></div>
         </div>
         <ul className="gap-5 hidden sm:flex md:flex lg:flex xl:flex">
-            <li><a href="#About" className="font-semibold text-xl">ABOUT</a></li>
-            <li><a href="#Timeline" className="font-semibold text-xl">TIMELINE</a></li>
-            <li><a href="" className="relative font-semibold flex gap-2 text-xl">AGENDA <Image src={ArrowDown} width={10} height={10} alt="Coffee Logo"/> {} 
-                <div className="absolute top-[300%] w-[12.5rem] bg-[#082128] border-solid border-t-8 border-t-[#FFCC00] h-[10rem]">
-                  <ul className="flex flex-col gap-5 ml-2 justify-center h-full">
-                    <li><a href="">CONFERENCE</a></li>
-                    <li><a href="">COMPETITION</a></li>
-                    <li><a href="">FUN ACTIVITIES</a></li>
-                  </ul>
+            <li><a href="#About" className="font-semibold text-xl text-amber-50">ABOUT</a></li>
+            <li><a href="#Timeline" className="font-semibold text-xl text-amber-50">TIMELINE</a></li>
+            <li className="group cursor-pointer"><div className="relative font-semibold flex gap-2 text-xl text-amber-50">AGENDA 
+                <div className="hidden pointer-none hoverlocation w-30 h-60 z-10 absolute group-hover:flex">
+                  <div className="hidden mt-21 w-50 h-39"></div>
+                  <div className="absolute hidden top-[35%] w-[12.5rem] bg-[#082128] border-solid border-t-8 border-t-[#FFCC00] h-[10rem] group-hover:flex">
+                    <ul className="flex flex-col gap-5 ml-2 justify-center h-full text-amber-50 drop-shadow-xl">
+                      <li><a href="#Conference">CONFERENCE</a></li>
+                      <li><a href="#Competition">COMPETITION</a></li>
+                      <li><a href="">FUN ACTIVITIES</a></li>
+                    </ul>
+                  </div>
                 </div>
-                </a>
+              <Image src={ArrowDown} width={10} height={10} alt="Coffee Logo"/> {} 
+                </div>
               </li>
             <li><a href="" className="font-semibold text-xl">REGISTER</a></li>
         </ul>
