@@ -15,12 +15,7 @@ interface SelectedOptionsProps {
 
 const SelectedOptions: React.FC<SelectedOptionsProps> = ({ selectedOption, setSelectedOption, options }) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedOption(e.target.value);
-    setIsOpen(false);
-  };
-
+  
   return (
     <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#5ce88d00] to-[#008761] rounded-2xl md:w-[60vw]">
       <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
