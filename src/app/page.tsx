@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Image from "next/image";
 
 import NavbarUI from "./navbar";
+import FunActivities from './FunActivities';
 import dotbg from "./../Images/dottedbackground.svg"
 import CoffeeLogo from "./../Images/coffeeLogo.svg"
 import Waves from "./../Images/Waves.svg"
@@ -27,7 +28,7 @@ export default function Home() {
         <DisableZoom/>
         <NavbarUI />
         
-        <div className="relative flex justify-center items-center w-[100vw] h-[50vh] sm:h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[100vh]" style={{backgroundImage: `url('${dotbg.src}')`, backgroundSize: 'cover', backgroundRepeat: 'repeat'}}>
+        <div className="relative flex justify-center items-center w-[100vw] h-[80vh] sm:h-[100vh] md:h-[100vh] lg:h-[100vh] xl:h-[100vh]" style={{backgroundImage: `url('${dotbg.src}')`, backgroundSize: 'cover', backgroundRepeat: 'repeat'}}>
           <Image className="absolute z-[-10] w-[50vw] h-[50vh] top-[-20vh] right-[-15vw]" src={Waves} alt="Waves" />
           <Image className="w-[70vw] h-[100vh]" src={CoffeeLogo} width={1000} height={1000} alt="Coffee Logo"/> {}
           <Image className="absolute rotate-180 z-[-10] w-[50vw] h-[50vh] bottom-[-20vh] left-[-15vw]" src={Waves} alt="Waves" />
@@ -134,7 +135,7 @@ export default function Home() {
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={ConferenceSpeaker1} alt="Speaker1" />
                     </div>
-                    <p className="mt-5text-amber-50  text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5text-amber-50 mt-5 text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Muliasari Kartikawati, S.TP., M.Sc., Ph.D.
                     </p>
                     <p className="mt-5 text-amber-50 text-center font-bold max-w-[100%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
@@ -155,7 +156,7 @@ export default function Home() {
                     <p className="mt-5 text-amber-50 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     MuliasaAssoc. Prof. Mito Kokawa, Ph.D.
                     </p>
-                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[100%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[60%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Tsukuba University, Japan
                     </p>
                   </div>
@@ -241,6 +242,8 @@ export default function Home() {
                   </div>
             </div>
           </div>
+          
+          <FunActivities/>
 
       </div>
     </div>
