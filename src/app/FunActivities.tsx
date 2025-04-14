@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image";
 import Bali from "./../Images/FunActivities/Bali.svg"
 import CityTour from "./../Images/FunActivities/CityTour.svg"
 import React, { useState } from "react";
