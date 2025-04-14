@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import Head from "next/head";
 
 interface Option {
   value: string;
@@ -15,8 +16,13 @@ interface SelectedOptionsProps {
 
 const SelectedOptions: React.FC<SelectedOptionsProps> = ({ selectedOption, setSelectedOption, options }) => {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
+    <>
+    <Head>
+        {/* Link to your favicon */}
+        <link rel="icon" href="./../Images/CoFFEE-Logo-Only-Globe.png" />
+    </Head>
     <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#5ce88d00] to-[#008761] rounded-2xl md:w-[60vw]">
       <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
         <div className="">
@@ -66,6 +72,7 @@ const SelectedOptions: React.FC<SelectedOptionsProps> = ({ selectedOption, setSe
         </a>
       </div>
     </div>
+    </>
   );
 };
 

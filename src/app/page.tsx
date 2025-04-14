@@ -158,7 +158,7 @@ export default function Home() {
                       <Image className="w-[90%]" src={ConferenceSpeaker2} alt="Speaker1" />
                     </div>
                     <p className="mt-5 text-amber-50 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
-                    MuliasaAssoc. Prof. Mito Kokawa, Ph.D.
+                    Assoc. Prof. Mito Kokawa, Ph.D.
                     </p>
                     <p className="mt-5 text-amber-50 text-center font-bold max-w-[60%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Tsukuba University, Japan
