@@ -13,8 +13,8 @@ export default function FunActivities(){
   ];
     return(
         <div>
-        <h1 className="text-center text-5xl font-semibold mt-20 text-amber-50 md:text-6xl">FUN ACTIVITES</h1>
-          <div id="FunActivities" className="FunActivities w-[100vw] flex flex-col items-center justify-center sm:items-stretch md:flex-row gap-[1.5vw]">
+        <h1 className="text-center text-4xl font-semibold mt-20 text-amber-50 md:text-6xl">FUN ACTIVITES</h1>
+          <div id="FunActivities" className="FunActivities w-[100vw] flex flex-col items-center justify-center sm:items-stretch md:flex-row">
           <SelectedOptions selectedOption={selectedOption} setSelectedOption={setSelectedOption} options={options} />
           </div>
         </div>

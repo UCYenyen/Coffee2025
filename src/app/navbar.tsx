@@ -25,7 +25,7 @@ export default function navbar() {
                     <ul className="flex flex-col gap-5 ml-2 justify-center h-full text-amber-50 drop-shadow-xl">
                       <li><a href="#Conference">CONFERENCE</a></li>
                       <li><a href="#Competition">COMPETITION</a></li>
-                      <li><a href="">FUN ACTIVITIES</a></li>
+                      <li><a href="#FunActivities">FUN ACTIVITIES</a></li>
                     </ul>
                   </div>
                 </div>

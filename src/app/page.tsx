@@ -3,6 +3,9 @@ import Image from "next/image";
 
 import NavbarUI from "./navbar";
 import FunActivities from './FunActivities';
+import LocationsAndAccommodations from "./LocationsAndAccomodation";
+import Footer from "./footer";
+
 import dotbg from "./../Images/dottedbackground.svg"
 import CoffeeLogo from "./../Images/coffeeLogo.svg"
 import Waves from "./../Images/Waves.svg"
@@ -15,6 +18,7 @@ import CEO2 from "./../Images/Pembicara/CEOSpeaker2.svg";
 
 import paper from "./../Images/Competition/paper.svg";
 import poster from "./../Images/Competition/poster.svg";
+import registrationFee from "./../Images/registrationFee.svg";
 
 import DisableZoom from "./DisableZoom";
 export const metadata: Metadata = {
@@ -34,7 +38,7 @@ export default function Home() {
           <Image className="absolute rotate-180 z-[-10] w-[50vw] h-[50vh] bottom-[-20vh] left-[-15vw]" src={Waves} alt="Waves" />
         </div>
         <div id="About" className="bg-[#082128] pt-10 pb-10 w-[100vw]" style={{backgroundImage: `url('${dotbg.src}')`, backgroundSize: 'cover', backgroundRepeat: 'repeat'}}>
-          <h1 className="text-center text-6xl font-semibold text-amber-50">ABOUT</h1>
+          <h1 className="text-center text-4xl font-semibold text-amber-50 md:text-6xl">ABOUT</h1>
           <div className="ThemeAndScopes w-[100vw] flex justify-center">
             <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl">
               <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
@@ -118,7 +122,7 @@ export default function Home() {
               </a>
           </div>
 
-          <h1 className="text-center text-5xl font-semibold mt-10 text-amber-50 md:text-6xl">TIMELINE</h1>
+          <h1 className="text-center text-4xl font-semibold mt-10 text-amber-50 md:text-6xl">TIMELINE</h1>
           <div className="flex justify-center w-full mt-10">
             <Image id="Timeline" className="w-[100vw] ml-[-2.5vw] h-[60vh] bottom-[-20vh] left-[-15vw] sm:h-[100vh] md:h-[100vh] xl:h-[150vh]" src={Timeline} alt="Timeline" />
           </div>
@@ -163,7 +167,7 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 className="text-center text-5xl font-semibold mt-20 md:text-6xl">CEO TALK</h1>
+          <h1 className="text-center text-4xl font-semibold mt-20 md:text-6xl">CEO TALK</h1>
           <div id="CEOTalk" className="Conference w-[100vw] flex flex-col items-center justify-center sm:items-stretch md:flex-row gap-[1.5vw]">
             <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[29vw]">
                   <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
@@ -203,7 +207,7 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 className="text-center text-5xl font-semibold mt-20 text-amber-50 md:text-6xl">COMPETITION</h1>
+          <h1 className="text-center text-4xl font-semibold mt-20 text-amber-50 md:text-6xl">COMPETITION</h1>
           <div id="Competition" className="Competition w-[100vw] flex flex-col items-center justify-center sm:items-stretch md:flex-row gap-[1.5vw]">
             <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#5ce88d00] to-[#008761] rounded-2xl md:w-[29vw]">
                   <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
@@ -244,6 +248,35 @@ export default function Home() {
           </div>
           
           <FunActivities/>
+
+          <LocationsAndAccommodations/>
+
+          <div className="w-full flex items-center justify-center mt-10">
+              <a href="">
+                <div className="bg-radial from-[#F4E39C] to-[#FFCC00] rounded-xl text-black text-[24px] font-semibold p-2 px-20 sm:text-[32px]">FAQ</div>
+              </a>
+          </div>
+
+          <h1 className="text-center text-4xl font-semibold mt-20 md:text-6xl">REGISTRATION</h1>
+          <div id="Registration Fee" className="mb-20 Conference w-[100vw] flex flex-col items-center justify-center sm:items-stretch md:flex-row gap-[1.5vw]">
+            <div className="mt-10 relative flex justify-center w-[90vw] bg-gradient-to-b from-[#93e2af00] to-[#008761] rounded-2xl md:w-[60vw]">
+                  <div className="absolute top-[-10px] bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
+                    <div className="">
+                      <h1 className="text-[24px] pl-[3vw] pr-[3vw] sm:text-[24px] text-black font-semibold p-2">REGISTRATION FEE</h1>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center bg-[#93e2af00] rounded-2xl mt-20 mb-5 w-[95%]">
+                    <div className="flex justify-center w-full">
+                      <Image className="w-[90%]" src={registrationFee} alt="Registration Fee" />
+                    </div>
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[80%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    Publication fees are not included. Participants who register for a competition are exempt from paying the non presenter (conference) fee.
+                    </p>
+                  </div>
+            </div>
+          </div>
+      
+      <Footer/>
 
       </div>
     </div>
