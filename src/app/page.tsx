@@ -117,6 +117,7 @@ export default function Home() {
               </a>
           </div>
 
+          <h1 className="text-center text-5xl font-semibold mt-10 text-amber-50 md:text-6xl">TIMELINE</h1>
           <div className="flex justify-center w-full mt-10">
             <Image id="Timeline" className="w-[100vw] ml-[-2.5vw] h-[60vh] bottom-[-20vh] left-[-15vw] sm:h-[100vh] md:h-[100vh] xl:h-[150vh]" src={Timeline} alt="Timeline" />
           </div>
@@ -133,10 +134,10 @@ export default function Home() {
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={ConferenceSpeaker1} alt="Speaker1" />
                     </div>
-                    <p className="mt-5 text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5text-amber-50  text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Muliasari Kartikawati, S.TP., M.Sc., Ph.D.
                     </p>
-                    <p className="mt-5 text-center font-bold max-w-[100%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[100%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Universitas Ciputra Surabaya, Indonesia
                     </p>
                   </div>
@@ -151,10 +152,10 @@ export default function Home() {
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={ConferenceSpeaker2} alt="Speaker1" />
                     </div>
-                    <p className="mt-5 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     MuliasaAssoc. Prof. Mito Kokawa, Ph.D.
                     </p>
-                    <p className="mt-5 text-center font-bold max-w-[100%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[100%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Tsukuba University, Japan
                     </p>
                   </div>
@@ -173,10 +174,10 @@ export default function Home() {
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={CEO1} alt="Speaker1" />
                     </div>
-                    <p className="mt-5 text-center font-bold max-w-[80%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[80%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     A.A. Raka Bagus Vinaya
                     </p>
-                    <p className="mt-5 text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     CEO & Owner of Ladang Lima
                     </p>
                   </div>
@@ -191,10 +192,10 @@ export default function Home() {
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={CEO2} alt="Speaker1" />
                     </div>
-                    <p className="mt-5 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Jamie Najmi Misbah
                     </p>
-                    <p className="mt-5 text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     CEO of Mazaraat Artisan Cheese
                     </p>
                   </div>
@@ -213,7 +214,7 @@ export default function Home() {
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={paper} alt="Speaker1" />
                     </div>
-                    <p className="mt-5 text-center font-bold max-w-[80%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[80%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Paper Competition
                     </p>
                     <a href="" className="mt-5 text-center font-bold max-w-[70%] text-card-yellow text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
@@ -231,7 +232,7 @@ export default function Home() {
                     <div className="flex justify-center w-full">
                       <Image className="w-[90%]" src={poster} alt="Speaker1" />
                     </div>
-                    <p className="mt-5 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
+                    <p className="mt-5 text-amber-50 text-center font-bold max-w-[70%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
                     Poster Competition
                     </p>
                     <a href="" className="mt-5 text-center font-bold max-w-[70%] text-card-yellow text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
