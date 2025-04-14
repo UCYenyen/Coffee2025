@@ -1,6 +1,4 @@
 import Image from "next/image";
-import { DetailedHTMLProps, ForwardRefExoticComponent, ImgHTMLAttributes } from "react";
-import { Interface } from "readline";
 
 interface SelectedOptionsProps {
   selectedOption: string;
