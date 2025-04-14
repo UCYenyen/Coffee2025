@@ -3,13 +3,14 @@ import { Dispatch, SetStateAction } from "react";
 
 interface SelectedOptionsProps {
   selectedOption: string;
-  setSelectedOption: Dispatch<SetStateAction<string>>;
-  options: {
+  setSelectedOption: (option: string) => void;
+  options: Array<{
     value: string;
     Image: any;
     description: string;
-  }[];
+  }>;
 }
+export type { SelectedOptionsProps };
 const SelectedOptions : React.FC<SelectedOptionsProps> = ({ selectedOption, setSelectedOption, options }) => 
 {
   return (
