@@ -1,11 +1,13 @@
 import Image from "next/image";
+import { DetailedHTMLProps, ForwardRefExoticComponent, ImgHTMLAttributes } from "react";
+import { Interface } from "readline";
 
 interface SelectedOptionsProps {
   selectedOption: string;
   setSelectedOption: (option: string) => void;
   options: Array<{
     value: string;
-    Image: any;
+    Image: string;
     description: string;
   }>;
 }
@@ -27,7 +29,7 @@ const SelectedOptions : React.FC<SelectedOptionsProps> = ({ selectedOption, setS
       </div>
       <div className="flex flex-col items-center bg-[#93e2af00] rounded-2xl mt-20 mb-5 w-[95%]">
         <div className="flex justify-center w-full">
-          <Image className="w-[100%] border-solid border-4 border-[#93E2AE]" src={options.find((opt) => opt.value === selectedOption)?.Image} alt="Options" />
+          <Image className="w-[100%] border-solid border-4 border-[#93E2AE]" src={options.find((opt) => opt.value === selectedOption)?.Image || "./../Images/FunActivities/Bali.svg"} alt="Options" />
         </div>
         <p className="mt-5 text-amber-50 text-center font-bold max-w-[90%] text-[20px] pl-2 pr-2 sm:text-[5px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
           {options.find((opt) => opt.value === selectedOption)?.description}
