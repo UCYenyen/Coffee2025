@@ -9,7 +9,7 @@ interface SelectedOptionsProps {
     description: string;
   }>;
 }
-export type { SelectedOptionsProps };
+
 const SelectedOptions : React.FC<SelectedOptionsProps> = ({ selectedOption, setSelectedOption, options }) => 
 {
   return (
