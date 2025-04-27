@@ -57,7 +57,11 @@ export default function Home() {
             </div>
             <div className="bg-[#93E2AE] rounded-2xl mt-10 p-5">
               <p className="text-center md:text-left text-black sm:text-[20px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
-              This competition begins with the submission of an abstract. Submitted abstracts will undergo a selection process, and those that are accepted will proceed to the full paper stage. Those who’s abstract hasn't been accepted, may submit the revised abstract and proceed to the full paper stage. Participants whose full papers pass the evaluation will present their work through a PowerPoint presentation in class.
+                This competition invites high school and undergraduate students
+                to showcase their scientific research through poster
+                presentations. Participants will present their work to the
+                judges&#39;, who will evaluate each submission based on scientific
+                content, visual design, and presentation skills.
               </p>
             </div>
           </div>
