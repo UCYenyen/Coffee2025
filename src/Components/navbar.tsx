@@ -1,19 +1,49 @@
+'use client'
+import { useState } from "react";
 import Image from "next/image";
 import ArrowDown from "./../Images/arrowDown.svg"
 import UClogo from "./../Images/uclogo.svg"
 import FTPlogo from "./../Images/ftplogo.svg"
 export default function navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
-      <nav className="bg-[#082128] p-10 flex justify-between items-center">
+      <nav className="relative bg-[#082128] p-10 flex justify-between items-center">
         <div className="flex gap-5">
           <Image src={UClogo} width={50} height={50} alt="UC Logo" />
           <Image src={FTPlogo} width={50} height={50} alt="FTP Logo" />
         </div>
         
-        <div className="flex flex-col gap-1.5 sm:hidden md:hidden lg:hidden xl:hidden">
-          <div className="bg-slate-50 w-10 h-2"></div>
-          <div className="bg-slate-50 w-10 h-2"></div>
-          <div className="bg-slate-50 w-10 h-2"></div>
+        <div className={`absolute left-0 bottom-[-7.5rem] w-full bg-[#082128] z-40 flex flex-col gap-5 p-5 ${
+          isMenuOpen ? "flex" : "hidden"}`}>
+            <ul className="text-md font-semibold flex flex-col gap-2">
+              <li><a href="https://www.ciputra.ac.id/ftp/coffee/#about">About</a></li>
+              <li><a href="https://www.ciputra.ac.id/ftp/coffee/#timeline">Timeline</a></li>
+              <li><a href="https://www.ciputra.ac.id/ftp/coffee/#conference">Agenda</a></li>
+              <li><a href="https://www.ciputra.ac.id/ftp/coffee/">Register</a></li>
+            </ul>
+        </div>
+
+        {/* Hamburger Menu */}
+        <div
+          onClick={toggleMenu}
+          className="sm:hidden flex flex-col items-center justify-center cursor-pointer"
+        >
+          {isMenuOpen ? (
+            <div className="relative w-10 h-10">
+              <div className="absolute w-full h-2 bg-slate-50 rotate-45 top-[50%] left-0"></div>
+              <div className="absolute w-full h-2 bg-slate-50 -rotate-45 top-[50%] left-0"></div>
+            </div>
+          ) : (
+            <div className="flex flex-col gap-1.5">
+              <div className="bg-slate-50 w-10 h-2"></div>
+              <div className="bg-slate-50 w-10 h-2"></div>
+              <div className="bg-slate-50 w-10 h-2"></div>
+            </div>
+          )}
         </div>
         <ul className="gap-5 hidden sm:flex md:flex lg:flex xl:flex">
             <li><a href="#About" className="font-semibold text-xl text-amber-50">ABOUT</a></li>
