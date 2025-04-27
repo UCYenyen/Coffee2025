@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from "next/image";
 
-import NavbarUI from "./../Components/navbar";
+import NavbarUI from "../Components/navbar";
 import Waves from "./../Images/Waves.svg"
 import dotbg from "./../Images/dottedbackground.svg"
 import poster from "./../Images/Competition/poster.svg"
