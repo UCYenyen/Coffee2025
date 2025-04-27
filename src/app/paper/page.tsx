@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
 import Image from "next/image";
 
-import NavbarUI from "../Components/Navbar";
-import Waves from "./../Images/Waves.svg"
-import dotbg from "./../Images/dottedbackground.svg"
-import poster from "./../Images/Competition/poster.svg"
+import NavbarUI from "./../../Components/Navbar";
+import Waves from "./../../Images/Waves.svg"
+import dotbg from "./../../Images/dottedbackground.svg"
+import poster from "./../../Images/Competition/paper.svg"
 
-import DisableZoom from "./../DisableZoom";
+import DisableZoom from "./../../DisableZoom";
 export const metadata: Metadata = {
   title: 'CoFFEE 2025',
   description:
@@ -57,11 +57,7 @@ export default function Home() {
             </div>
             <div className="bg-[#93E2AE] rounded-2xl mt-10 p-5">
               <p className="text-center md:text-left text-black sm:text-[20px] md:text-[20px] lg:text-[24px] xl:text-[28px]">
-                This competition invites high school and undergraduate students
-                to showcase their scientific research through poster
-                presentations. Participants will present their work to the
-                judges, who will evaluate each submission based on scientific
-                content, visual design, and presentation skills.
+              This competition begins with the submission of an abstract. Submitted abstracts will undergo a selection process, and those that are accepted will proceed to the full paper stage. Those who’s abstract hasn't been accepted, may submit the revised abstract and proceed to the full paper stage. Participants whose full papers pass the evaluation will present their work through a PowerPoint presentation in class.
               </p>
             </div>
           </div>
