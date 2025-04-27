@@ -46,16 +46,16 @@ export default function Navbar() {
           )}
         </div>
         <ul className="gap-5 hidden sm:flex md:flex lg:flex xl:flex">
-            <li><a href="#About" className="font-semibold text-xl text-amber-50">ABOUT</a></li>
-            <li><a href="#Timeline" className="font-semibold text-xl text-amber-50">TIMELINE</a></li>
+            <li><a href="https://www.ciputra.ac.id/ftp/coffee/#about" className="font-semibold text-xl text-amber-50">ABOUT</a></li>
+            <li><a href="https://www.ciputra.ac.id/ftp/coffee/#timeline" className="font-semibold text-xl text-amber-50">TIMELINE</a></li>
             <li className="group cursor-pointer"><div className="relative font-semibold flex gap-2 text-xl text-amber-50">AGENDA 
                 <div className="hidden pointer-none hoverlocation w-30 h-60 z-10 absolute group-hover:flex">
                   <div className="hidden mt-21 w-50 h-39"></div>
                   <div className="absolute hidden top-[35%] w-[12.5rem] bg-[#082128] border-solid border-t-8 border-t-[#FFCC00] h-[10rem] group-hover:flex">
                     <ul className="flex flex-col gap-5 ml-2 justify-center h-full text-amber-50 drop-shadow-xl">
-                      <li><a href="#Conference">CONFERENCE</a></li>
-                      <li><a href="#Competition">COMPETITION</a></li>
-                      <li><a href="#FunActivities">FUN ACTIVITIES</a></li>
+                      <li><a href="https://www.ciputra.ac.id/ftp/coffee/#conference">CONFERENCE</a></li>
+                      <li><a href="https://www.ciputra.ac.id/ftp/coffee/#competition">COMPETITION</a></li>
+                      <li><a href="https://www.ciputra.ac.id/ftp/coffee/#fun">FUN ACTIVITIES</a></li>
                     </ul>
                   </div>
                 </div>
