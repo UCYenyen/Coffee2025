@@ -51,7 +51,7 @@ export default function Home() {
             <div className="relative w-full flex justify-center">
               <div className="bg-gradient-to-b from-[#93E2AE] to-[#46BF6F] rounded-2xl">
                 <h1 className="text-[24px] text-black font-semibold p-2 text-center">
-                  Poster Competition
+                  Paper Competition
                 </h1>
               </div>
             </div>
